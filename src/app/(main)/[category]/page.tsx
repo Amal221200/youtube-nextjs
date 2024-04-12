@@ -9,7 +9,7 @@ const ChannelIdPage = async ({ params }: { params: { category: string } }) => {
   }
   
   return (
-    <main className="h-full overflow-y-auto">
+    <main className="h-full w-full overflow-y-auto">
       <VideosList videos={videos} />
     </main>
   )

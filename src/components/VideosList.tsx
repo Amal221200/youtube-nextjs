@@ -5,7 +5,7 @@ import VideoItem from "./VideoItem"
 const VideosList = ({ videos }: { videos: VideoItemType[] }) => {
 
   return (
-    <main className="grid grid-cols-3 gap-3 justify-between h-[90dvh] overflow-y-scroll">
+    <main className="grid md:grid-cols-3 sm:grid-cols-2 gap-3 md:justify-between justify-center h-[90dvh] overflow-y-scroll w-full">
       {
         videos.map((video) => (
           <VideoItem data={video} key={video.id.videoId} />
