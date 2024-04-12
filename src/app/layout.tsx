@@ -4,6 +4,7 @@ import "./globals.css";
 import AuthProvider from "@/components/providers/AuthProvider";
 import cn from "@/lib/cn";
 import ProgressBarProvider from "@/components/providers/ProgressBarProvider";
+import ThemeProvider from "@/components/providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,11 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, "overflow-hidden")}>
         <AuthProvider>
-          <ProgressBarProvider>
-            {children}
-          </ProgressBarProvider>
+          <ThemeProvider attribute="class" defaultTheme="system">
+            <ProgressBarProvider>
+              {children}
+            </ProgressBarProvider>
+          </ThemeProvider>
         </AuthProvider>
       </body>
     </html>

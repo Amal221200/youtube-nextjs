@@ -5,7 +5,7 @@ const SideBar = async () => {
 
   return (
     <>
-      <aside className='border-r h-full md:block hidden'>
+      <aside className='border-r dark:border-r-white/30 h-full md:block hidden'>
         <CategoryItems />
       </aside>
       <MobileSidebar />

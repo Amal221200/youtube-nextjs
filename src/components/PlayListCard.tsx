@@ -27,8 +27,8 @@ const PlayListCard = ({ data: { type, name, icon }, mobile }: PlayListCardProps)
     
     return (
         <Link href={`/${type}`}>
-            <button type="button" onClick={handleClick} className={cn('flex gap-2 justify-start items-center rounded p-2 transition hover:bg-black/10 w-full group', params.category === type && "bg-black/10")}>
-                <span className={cn("text-black group-hover:text-red-600", params.category === type && "text-red-600")}>
+            <button type="button" onClick={handleClick} className={cn('flex gap-2 justify-start items-center rounded p-2 transition hover:bg-black/10  dark:hover:bg-white/10 w-full group', params.category === type && "bg-black/10 dark:bg-white/10")}>
+                <span className={cn(" group-hover:text-red-600", params.category === type && "text-red-600")}>
                     {icon}
                 </span>
                 <h1>{name}</h1>

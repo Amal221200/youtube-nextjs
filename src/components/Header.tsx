@@ -12,7 +12,7 @@ const Header = async () => {
       <div className="flex gap-1 items-center ">
         <ToggleSidebar />
         <div className="relative w-28 h-12">
-          <Image src={'/youtube.svg'} alt="youtube" fill className="object-cover" />
+          <Image src={'/youtube.svg'} alt="youtube" fill className="object-cover dark:invert" />
         </div>
       </div>
 
