@@ -2,13 +2,11 @@
 
 import useSidebar from '@/hooks/useSidebar'
 import { Menu } from 'lucide-react'
-import { useTheme } from 'next-themes'
 import React from 'react'
 
 const ToggleSidebar = () => {
     const { onOpen } = useSidebar()
-    const {setTheme} = useTheme()
-    setTheme("light")
+ 
     return (
         <button type="button" onClick={onOpen} className="cursor-pointer md:hidden block hover:opacity-70 transition">
             <Menu />
