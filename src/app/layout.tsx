@@ -23,7 +23,8 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, "overflow-hidden")}>
         <AuthProvider>
-          <ThemeProvider attribute="class" defaultTheme="system">
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem
+            disableTransitionOnChange>
             <ProgressBarProvider>
               {children}
             </ProgressBarProvider>

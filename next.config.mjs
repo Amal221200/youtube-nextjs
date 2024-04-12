@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
+        dangerouslyAllowSVG: true,
         remotePatterns: [
             {
                 hostname: "i.ytimg.com",
@@ -12,6 +13,10 @@ const nextConfig = {
             },
             {
                 hostname: "yt3.ggpht.com",
+                protocol: "https"
+            },
+            {
+                hostname: "placehold.co",
                 protocol: "https"
             },
         ]
