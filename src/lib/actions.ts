@@ -12,7 +12,7 @@ export async function getVideos(categoryType: string): Promise<VideoItemType[] |
         const response = await axios.request(options);
         return response.data.items
     } catch (error) {
-        // console.error(error);
+        console.log("fetch error");
         return null
     }
 }

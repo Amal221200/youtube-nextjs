@@ -5,7 +5,7 @@ import React from 'react'
 const VideoItem = async ({ data: { snippet: videoData } }: { data: VideoItemType }) => {
 
   return (
-    <article className='border rounded-xl max-w-[300px] space-y-2'>
+    <article className='border rounded-xl sm:max-w-none max-w-[300px] space-y-2'>
       <div className='relative md:h-[220px] h-[200px] rounded-xl overflow-hidden'>
         <Image src={videoData.thumbnails.high.url || "https://placehold.co/600x400"} alt='image' fill className='object-cover w-full' />
       </div>
