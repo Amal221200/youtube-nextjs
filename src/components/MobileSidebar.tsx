@@ -13,7 +13,7 @@ const MobileSidebar = () => {
                 <button type="button" onClick={onClose} className="absolute top-3 right-3 hover:opacity-70 transition">
                     <CircleX />
                 </button>
-                <CategoryItems className="mt-10" />
+                <CategoryItems className="mt-10" mobile />
             </div>
         </aside>
     )

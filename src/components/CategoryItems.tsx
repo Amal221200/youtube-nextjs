@@ -3,13 +3,17 @@ import { categories } from '@/lib/constants'
 import React, { ComponentProps } from 'react'
 import PlayListCard from './PlayListCard'
 
-const CategoryItems = ({ className }: ComponentProps<'div'>) => {
+interface CategoryItemsProps extends ComponentProps<'div'>{
+    mobile?: boolean
+}
+
+const CategoryItems = ({ className, mobile }: CategoryItemsProps) => {
 
     return (
         <div className={cn("space-y-3", className)}>
             {
                 categories.map((category) => (
-                    <PlayListCard key={category.type} data={category} />
+                    <PlayListCard key={category.type} data={category} mobile={mobile}  />
                 ))
             }
         </div >
