@@ -2,8 +2,7 @@
 import useSidebar from "@/hooks/useSidebar"
 import cn from "@/lib/cn"
 import { CircleX } from "lucide-react"
-import PlayListCard from "./PlayListCard"
-import { categories } from "@/lib/constants"
+import CategoryItems from "./CategoryItems"
 
 const MobileSidebar = () => {
     const { isOpen, onClose } = useSidebar()
@@ -14,13 +13,7 @@ const MobileSidebar = () => {
                 <button type="button" onClick={onClose} className="absolute top-3 right-3 hover:opacity-70 transition">
                     <CircleX />
                 </button>
-                <div className='space-y-3 mt-10'>
-                    {
-                        categories.map((category) => (
-                            <PlayListCard key={category.type} data={category} />
-                        ))
-                    }
-                </div>
+                <CategoryItems className="mt-10" />
             </div>
         </aside>
     )

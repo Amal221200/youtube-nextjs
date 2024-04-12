@@ -18,7 +18,7 @@ const Header = async () => {
 
       <div>
         {
-          session?.user ? (
+          session?.user && (
             <form action={async () => {
               "use server"
               await signOut()
@@ -29,13 +29,6 @@ const Header = async () => {
                   <LogOut />
                 </button>
               </div>
-            </form>
-          ) : (
-            <form action={async () => {
-              "use server"
-              await signIn()
-            }}>
-              <button >Sign In</button>
             </form>
           )
         }

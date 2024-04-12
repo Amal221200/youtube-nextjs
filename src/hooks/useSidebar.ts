@@ -7,7 +7,7 @@ interface SidebarData {
 }
 
 const useSidebar = create<SidebarData>((set) => ({
-    isOpen: true,
+    isOpen: false,
     onOpen() {
         set({ isOpen: true })
     },

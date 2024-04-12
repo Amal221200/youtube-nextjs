@@ -7,9 +7,9 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
     return (
         <div className='h-full'>
             <Header />
-            <div className='md:grid grid-cols-5 h-full w-full gap-x-3'>
+            <div className='md:grid md:grid-cols-5 h-full md:gap-x-3'>
                 <SideBar />
-                <div className='md:col-span-4 w-full'>
+                <div className='md:col-span-4 '>
                     {children}
                 </div>
             </div>
