@@ -1,13 +1,13 @@
-import VideosList from "@/components/VideosList"
+import VideosList from "@/components/video/VideosList"
 import { getVideos } from "@/lib/actions"
 
 const ChannelIdPage = async ({ params }: { params: { category: string } }) => {
-  let videos = await getVideos(params.category)
+  const videos = await getVideos(params.category)
 
   if (!videos) {
     return <h1 className="text-center font-bold text-xl">Could not fetch videos</h1>
   }
-  
+
   return (
     <main className="h-full overflow-y-auto">
       <VideosList videos={videos} />

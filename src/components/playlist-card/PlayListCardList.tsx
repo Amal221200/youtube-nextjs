@@ -3,11 +3,11 @@ import { categories } from '@/lib/constants'
 import React, { ComponentProps } from 'react'
 import PlayListCard from './PlayListCard'
 
-interface CategoryItemsProps extends ComponentProps<'div'> {
+interface PlayListCardList extends ComponentProps<'div'> {
     mobile?: boolean
 }
 
-const CategoryItems = ({ className, mobile }: CategoryItemsProps) => {
+const PlayListCardList = ({ className, mobile }: PlayListCardList) => {
 
     return (
         <div className={cn("space-y-3", className)}>
@@ -20,4 +20,4 @@ const CategoryItems = ({ className, mobile }: CategoryItemsProps) => {
     )
 }
 
-export default CategoryItems
+export default PlayListCardList

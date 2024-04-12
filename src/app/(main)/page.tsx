@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 
 const MainPage = () => {
+  
   redirect("/new")
 }
 

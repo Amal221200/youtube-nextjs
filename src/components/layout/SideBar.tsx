@@ -1,4 +1,4 @@
-import CategoryItems from './CategoryItems'
+import PlayListCardList from '../playlist-card/PlayListCardList'
 import MobileSidebar from './MobileSidebar'
 
 const SideBar = async () => {
@@ -6,7 +6,7 @@ const SideBar = async () => {
   return (
     <>
       <aside className='border-r dark:border-r-white/30 h-full md:block hidden'>
-        <CategoryItems />
+        <PlayListCardList />
       </aside>
       <MobileSidebar />
     </>

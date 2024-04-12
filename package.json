@@ -12,7 +12,7 @@
     "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "lucide-react": "^0.367.0",
-    "next": "14.1.4",
+    "next": "^14.2.0",
     "next-auth": "^5.0.0-beta.16",
     "next-themes": "^0.3.0",
     "next13-progressbar": "^1.2.1",

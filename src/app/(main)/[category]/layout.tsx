@@ -1,5 +1,5 @@
-import Header from '@/components/Header'
-import SideBar from '@/components/SideBar'
+import Header from '@/components/layout/Header'
+import SideBar from '@/components/layout/SideBar'
 import { ReactNode } from 'react'
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
