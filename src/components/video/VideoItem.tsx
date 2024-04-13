@@ -13,7 +13,7 @@ const VideoItem = ({ data: { snippet: videoData } }: { data: VideoItemType }) =>
       <div className='px-3'>
         <div className='flex flex-col justify-between h-full'>
           <p className='font-bold text-sm line-clamp-2'>{videoData.title}</p>
-          <small className='text-gray-400'>{videoData.channelTitle}</small>
+          <small className='text-gray-900 dark:text-gray-400'>{videoData.channelTitle}</small>
         </div>
       </div>
     </article>
