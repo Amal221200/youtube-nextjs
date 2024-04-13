@@ -11,9 +11,9 @@ const VideoItem = ({ data: { snippet: videoData } }: { data: VideoItemType }) =>
         <VideoThumbnail src={videoData.thumbnails.high.url || "https://placehold.co/600x400"} alt={videoData.title} />
       </div>
       <div className='px-3'>
-        <div className='space-y-1'>
+        <div className='flex flex-col justify-between h-full'>
           <p className='font-bold text-sm line-clamp-2'>{videoData.title}</p>
-          <p>{videoData.channelTitle}</p>
+          <small className='text-gray-400'>{videoData.channelTitle}</small>
         </div>
       </div>
     </article>
